@@ -13,9 +13,9 @@ module "scp" {
   description        = "Denies access to all regions except eu-west-2"
   policy_file        = "policies/deny-unapproved-regions.json"
   target_account_ids = [
-    "430118817587", # management
-    "795289711031", # log-archive
-    "194264601131"  # workload
+    "111111111111", # management
+    "222222222222", # log-archive
+    "333333333333"  # workload
   ]
 }
 
@@ -23,10 +23,10 @@ module "guardduty" {
   source             = "../../modules/guardduty"
   enable_guardduty   = true
   member_account_ids = [
-    "795289711031", # log-archive
-    "194264601131"  # workload
+    "222222222222", # log-archive
+    "333333333333"  # workload
   ]
-  master_account_id  = "430118817587"
+  master_account_id  = "0000000000"
 }
 
 module "cloudtrail" {
