@@ -1,0 +1,1 @@
+# landingzone-terraform-multi-account
