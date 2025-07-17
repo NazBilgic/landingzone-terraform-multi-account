@@ -1,0 +1,28 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Terraform working directory
+.terraform/
+
+# Terraform lock file (ignore in subfolders)
+**/.terraform.lock.hcl
+
+# Terraform crash logs and override files
+crash.log
+override.tf
+override.tf.json
+
+# Sensitive variable definitions
+terraform.tfvars
+terraform.tfvars.json
+
+# Module cache (optional)
+modules/
+
+# macOS system files
+.DS_Store
+
+# IDE/editor settings
+.vscode/
+.idea/
